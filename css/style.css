@@ -1,0 +1,165 @@
+.form-general{
+    width: 500px;
+    margin: auto;
+    padding-top: 25px;
+}
+.title{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.btn-cpay {
+    padding:.375rem 1.6875rem;
+    border-radius:50rem;
+    font-size:.875rem;
+    font-weight:500;
+    color:#fff;
+    background:#368eef;
+    position:relative
+}
+.btn-cpay::after {
+    content:"";
+    border-radius:50rem;
+    position:absolute;
+    border:#fff solid 2px;
+    top:2px;
+    bottom:2px;
+    right:2px;
+    left:2px;
+    opacity:0;
+    transition:all .3s
+}
+.btn-cpay:hover {
+    color:#fff
+}
+.btn-cpay:hover::after {
+    opacity:1
+}
+.btn-cpay:focus {
+    box-shadow:none
+}
+.btn-cpay[disabled] {
+    opacity:.65;
+    cursor:not-allowed
+}
+.btn-cpay[disabled]::after {
+    display:none
+}
+@media (min-width: 576px) {
+    .btn-cpay {
+        padding:.5rem 2.0625rem;
+        font-size:.9375rem
+    }
+}
+@media (min-width: 768px) {
+    .btn-cpay {
+        padding:.5625rem 2.375rem;
+        font-size:1rem
+    }
+    .btn-cpay::after {
+        top:3px;
+        bottom:3px;
+        right:3px;
+        left:3px
+    }
+}
+@media (min-width: 992px) {
+    .btn-cpay {
+        padding:.6875rem 2.75rem;
+        font-size:1.0625rem
+    }
+}
+@media (min-width: 1200px) {
+    .btn-cpay {
+        padding:.8125rem 3.125rem;
+        font-size:1.125rem
+    }
+}
+.panel-prices .btn-cpay {
+    background:#29b1e3;
+    font-weight:400
+}
+
+.form-row {
+    padding-left:1rem;
+    padding-right:1.0625rem
+}
+input.form-control {
+    padding-left:0;
+    border:0;
+    border-bottom:1px solid #dadada;
+    border-radius:0;
+    box-shadow:none;
+    font-size:.9375rem;
+    line-height:2.5;
+    color:#29b1e3
+}
+input.form-control::placeholder {
+    color:#b5b4b6
+}
+input.form-control[disabled] {
+    color:#c4c8cc;
+    background-color:transparent
+}
+input.form-control.text-primary {
+    color:#007bff !important
+}
+input.form-control.text-secondary {
+    color:#6c757d !important
+}
+input.form-control.text-success {
+    color:#28a745 !important
+}
+input.form-control.text-danger {
+    color:#dc3545 !important
+}
+input.form-control.text-warning {
+    color:#ffc107 !important
+}
+input.form-control.text-info {
+    color:#17a2b8 !important
+}
+input.form-control.text-light {
+    color:#f8f9fa !important
+}
+input.form-control.text-dark {
+    color:#343a40 !important
+}
+input.form-control.text-muted {
+    color:#6c757d !important
+}
+input.form-control.text-white {
+    color:#fff !important
+}
+input.form-control:focus {
+    border-color:#29b1e3;
+    box-shadow:none !important;
+    color:#29b1e3
+}
+select.form-control {
+    border:0;
+    border-bottom:1px solid #dadada;
+    border-radius:0
+}
+select.form-control:focus {
+    border-color:#29b1e3;
+    box-shadow:none
+}
+.input-group-prepend {
+    position:relative;
+    z-index:10
+}
+.input-group-prepend .input-group-text {
+    width:29px;
+    padding:0;
+    border:0;
+    border-radius:0;
+    background:transparent
+}
+
+.input-group-prepend+input {
+    margin-left:-29px;
+    padding-left:29px
+}
+.input-group-prepend+input[readonly] {
+    background-color:transparent
+}
